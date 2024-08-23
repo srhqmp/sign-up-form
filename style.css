@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  outline: 1px solid red;
+}
+
+:root {
+  --primary-color: #cd5c08;
+  --secondary-color: #6a9c89;
+  --background-color: #fff5e4;
+  --text-color: #603f26;
+  --highlight-color: #ff9100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
