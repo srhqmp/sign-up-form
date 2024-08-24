@@ -31,11 +31,11 @@ body {
 }
 
 .content-body {
-  max-width: 90%;
+  margin-right: 48px;
 }
 
 .hero {
-  width: 800px;
+  min-width: 600px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -60,7 +60,7 @@ body {
   width: 100%;
   z-index: 2;
   position: relative;
-  top: 50px;
+  top: 65px;
 }
 
 .photo-credits {
@@ -76,13 +76,13 @@ body {
 }
 
 #logo {
-  width: 190px;
+  width: 150px;
 }
 
 h1 {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
-  font-size: 65px;
+  font-size: 48px;
   color: var(--background-color);
 }
 
@@ -96,6 +96,7 @@ h1 {
 
 p {
   margin-bottom: 24px;
+  text-wrap: wrap;
 }
 
 .description {
@@ -107,7 +108,8 @@ p {
   background-color: var(--background-color);
   color: var(--text-color);
   margin-bottom: 36px;
-  padding: 16px 46px;
+  padding: 36px 0;
+  padding-left: 46px;
 }
 
 .form-container h3 {
@@ -117,13 +119,14 @@ p {
 
 .form-container .group {
   display: flex;
-  margin-bottom: 28px;
+  gap: 48px;
 }
 
 .form-container .field {
-  display: block;
-  margin-right: 80px;
-  width: 400px;
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  gap: 12px;
 }
 
 label {
@@ -133,8 +136,6 @@ label {
 
 input {
   display: block;
-  width: 100%;
-  margin-top: 8px;
   padding: 6px 12px;
   border-radius: 4px;
   border: 1px solid #dcdcdc;
@@ -190,4 +191,61 @@ input:valid {
 
 input.unfilled {
   outline: 1px solid #dcdcdc;
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    min-width: 380px;
+  }
+
+  .form-container .field {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .form-container .group {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    background-color: var(--primary-color);
+  }
+
+  div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .hero {
+    width: 100%;
+    min-width: 0;
+    height: 100vh;
+  }
+
+  .description {
+    padding-top: 75px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (max-width: 720px) {
+  .form-container .field,
+  .form-container .group {
+    display: block;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .form-container .field {
+    width: 100%;
+  }
 }
