@@ -140,14 +140,9 @@ input {
   border: 1px solid #dcdcdc;
 }
 
-input:focus,
-input:hover {
+input:focus {
   outline: 1px solid var(--secondary-color);
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .submit-button {
@@ -178,4 +173,21 @@ form p a {
   font-weight: 900;
   color: var(--text-color);
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+input:invalid {
+  outline: 1px solid red;
+}
+
+input:valid {
+  outline: 1px solid green;
+}
+
+input.unfilled {
+  outline: 1px solid #dcdcdc;
 }

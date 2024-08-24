@@ -43,45 +43,77 @@
           </p>
         </div>
         <div class="form">
-          <form>
+          <form novalidate>
             <div class="form-container">
               <h3>Let's do this!</h3>
               <div class="group">
                 <div class="field field-first-name">
                   <label for="first-name">First Name</label>
-                  <input type="text" id="first-name" name="first-name" />
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="unfilled"
+                    name="first-name"
+                    required
+                  />
                   <div class="error-message"></div>
                 </div>
                 <div class="field field-last-name">
                   <label for="last-name">Last Name</label>
-                  <input type="text" id="last-name" name="last-name" />
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="unfilled"
+                    name="last-name"
+                    required
+                  />
                   <div class="error-message"></div>
                 </div>
               </div>
               <div class="group">
                 <div class="field field-email">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" />
+                  <input
+                    type="email"
+                    id="email"
+                    class="unfilled"
+                    name="email"
+                    required
+                  />
                   <div class="error-message"></div>
                 </div>
                 <div class="field field-phone-number">
                   <label for="phone-number">Phone Number</label>
-                  <input type="text" id="phone-number" name="phone-number" />
+                  <input
+                    type="text"
+                    id="phone-number"
+                    class="unfilled"
+                    name="phone-number"
+                    required
+                  />
                   <div class="error-message"></div>
                 </div>
               </div>
               <div class="group">
                 <div class="field field-password">
                   <label for="password">Password</label>
-                  <input type="password" id="password" name="password" />
-                  <div class="error-message">* Passwords do not match</div>
+                  <input
+                    type="password"
+                    id="password"
+                    class="unfilled"
+                    name="password"
+                    required
+                  />
+                  <div class="error-message"></div>
                 </div>
                 <div class="field field-confirm-password">
                   <label for="confirm-password">Confirm Password</label>
                   <input
                     type="password"
                     id="confirm-password"
+                    class="unfilled"
                     name="confirm-password"
+                    required
                   />
                   <div class="error-message"></div>
                 </div>
